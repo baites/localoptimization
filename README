@@ -1,0 +1,32 @@
+LO
+==
+
+Victor E. Bazterra 
+Departament of Physics
+University of Illinois at Chicago (2007)
+
+
+Description
+===========
+	This is a small C++ library for local optimization. 	
+
+
+Installation
+============
+
+It is necessary to define LOROOT that should be ponting to the root directory where the library is install.
+
+After that just type 'make' in the BIOSEQLIBROOT directory.
+
+Example:
+
+~> tar xvfz lo-x.x.tar.gz 
+
+~> cd lo
+
+bioseqlib> export LOROOT=$PWD (for bash)
+           setenv LOROOT PWD (for tcsh)
+   
+bioseqlib> make
+
+
