@@ -1,0 +1,15 @@
+AR           = ar rv
+
+CXX          = g++
+
+CXX_FLAGS    = -Wno-unused 
+
+
+INC_DIR      = $(LOROOT)/include
+
+
+%.o: %.C
+	$(CXX) $(CXX_FLAGS) $(DEBUG_FLAGS) -I$(INC_DIR) -c $< -o $@ 
+
+%.C:
+	$(CXX) $(CXX_FLAGS) $(DEBUG_FLAGS) -I$(INC_DIR) -c $@ -o $*.o 
